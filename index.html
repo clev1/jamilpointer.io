@@ -39,7 +39,9 @@
 		window.location.href = "https://github.com/clev1";
 	});
 	$("#projectBtn").click(function() {
-		$('body').load('projects.html');
+		$('body').fadeIn(600, function() {
+			$('body').load('projects.html');
+		});
 	});
 </script>
 </body>
