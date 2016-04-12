@@ -31,14 +31,15 @@
 		<input id="githubBtn" type="image" src="/images/github.png"></input>
 
 	</div>
-
-	
 	
 </footer>
 <script>
 	$(document).ready(); 
 	$("#githubBtn").click(function() {
 		window.location.href = "https://github.com/clev1";
+	});
+	$("#projectBtn").click(function() {
+		$('body').load('projects.html');
 	});
 </script>
 </body>
