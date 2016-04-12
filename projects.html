@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jamilpointer.io</title>
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/projects.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+	<script type='text/javascript' src='js/modernizr.js'></script>
+</head>
+<body>
+	<h1 class="center"><span>PROJECTS</span></h1>
+
+	<div id="content" class="container">
+		<div id="leftBar" class="col-sm-6">
+			<!--List of Projects will go here--> 
+			<nav>
+				<ul class="group" id="projectLinks">
+					<li><a href="#checkedin" id="1">CHECKEDIN</a></li>
+					<li><a href="#grua" id="2">GRUA</a></li>
+					<li><a href="#insurenow" id="3">INSURE NOW<a/></li>
+					<li><a href="#learningacad" id="4">LEARNING ACADEMY</a></li>
+				</ul>	
+			</nav>
+		</div>		
+		<section id="main-content">
+		<div id="rightBar" class="col-sm-6">
+			<!--Project Descriptions will be here--> 
+		
+				<!--Images/Media for each project will be held here--> 
+				<img id="projectImg" class="img-fluid" src="/images/project_screen.png">
+		
+			<div id="projectDescrip">
+				<!--Description and details of each project will be held here--> 
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, commodi accusantium maxime officiis quia assumenda quaerat ab id consequuntur voluptate itaque consequatur nemo, repudiandae quas necessitatibus voluptates saepe, omnis dolore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis a sint mollitia pariatur? Consequatur mollitia illo corporis porro, aut, animi ipsam dolore nulla, obcaecati temporibus iure blanditiis veritatis accusamus magnam!
+			</div>
+
+		</div>
+		</section>
+
+	</div>
+	<div id="buttonHolder" class="center">
+		<button type="submit">CONTACT ME</button>
+	</div>
+	
+	<script type="text/javascript">
+
+		var includeDiv = $("#rightBar");
+		$(window).on('hashchange', function() {
+			var href = location.hash.slice(1) + ".html";
+			includeDiv.load('include/' + href);
+		});
+
+	</script>
+
+</body>
+</html>
